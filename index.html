@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--link:css yazdığında <link rel="stylesheet" href="style.css"> gelir.
+    ve ctrl yapıp  href="style.css"> tıkladığında yeni dosya oluşturur.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--link aşağıdaki font yani ikon ekleme  font avosome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cars Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--container bütün arka plan için bir kapsayıcı-->
+    <!--navbar üst kısım için -->
+    <!--a ve nav etiketi yazılır bunun nedeni üst kısım için
+    sağ ve sol kısımları ayrıdır biri logo diğeri left menüler için-->
+    <div class="container">
+        <div class="navbar">
+            <!--resim klasörden seçerken src kısmına ./ yap-->
+            <a href="#">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <nav>
+                <!--menü etiketi oluşturmak için ul-li-a etiketi kullan-->
+                <ul>/<!--eğer tıkladığında başka sayfaya geçmek istersen # kısmına gidiceğin sayfanın linkini ekle-->
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">OUR CARS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!--Bu alttaki row web sitenin orta kısmı için class=col ise sağ ve sol kısımları belirtiyor.-->
+    <div class="row">
+        <div class="col">
+            <h1>
+                CARS
+                <hr /><!--çizgi oluşturmak için-->
+                WEBSİTE
+            </h1>
+            <p class="desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Saepe, nemo! Qui velit blanditiis corrupti illum.
+            </p>
+            <button class="btn">ALL CARS</button>
+        </div>
+        <div class="col">
+            <div class="cards"><!--shift ve alt tuşuna basarsan toplu yazım yapılıyor-->
+                <div class="card card-1">
+                    <div class="card-head">
+                        <h5>Togg</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="#" class="btn">Details</a>
+                    </div>
+                </div> 
+                <div class="card card-2">
+                    <div class="card-head">
+                        <h5>Audi</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="#" class="btn">Details</a>
+                    </div>
+
+                </div> 
+                <div class="card card-3">
+                    <div class="card-head">
+                        <h5>BMW</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="#" class="btn">Details</a>
+                    </div>
+                </div> 
+                <div class="card card-4">
+                    <div class="card-head">
+                        <h5>Mersedes-Benz</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing.</p>
+                    </div>
+                    <div class="card-bottom">
+                        <a href="#" class="btn">Details</a>
+                    </div>
+
+                </div>
+            </div>
+            
+                <div class="credit">
+                    created by <span>Gözde UZUNER</span>  | all right reserved
+                </div>
+             
+        </div>
+    </div>
+    </div>
+
+
+</body> 
+</html>

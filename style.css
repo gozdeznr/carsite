@@ -1,0 +1,159 @@
+/*bu import google fonts ayarrı için yani yazı şekilleri,, daha sonra * etiketine hangi yazı şekillerini kullanacağını css yerinden kopyala{*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {/*bu etiket bütün sayfa için geçerlidir ve arka plan resminin boşluklarını böyle yaparak tam kaplamasını sağlarasın*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;/*sayfanın tam olarak kaplaması için fotograf uzunluğundan dolayı kayma yapmamaası*/
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    height: 100vh; /*bu arkasayfa resmini tamamını kaplamak için*/
+    width: 100%;
+    padding-left: 8%; /* bu padding right ve left ayarı köşeleri0 ortalıyor*/
+    padding-right: 8%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/bg.png); /*linear gradirnt ayarı fotografın köşelerini hafif siyah göstermesi için*/
+    background-position: center; /* fotografı ortaalamak için size ve position kullan*/
+    background-size: cover;
+
+    
+}
+
+p {
+    font-size: 10px;
+    color: #fff;
+    line-height: 16px;/*yazıların satır aralarını ayarlar*/
+}
+
+.btn {/*bütün butonların ayarları için */
+    padding:  12px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;/*fare getirdğinde imlec*/
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;/*butonun köşeleri yuvarlak olması */
+    border: 1px solid red;
+    text-decoration: none;
+    transition: ease 0.5s;/*bu hover kısmında hızını ayarlar*/
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar {
+        height: 12%;
+        display: flex; /*yanyana getirmek içiin yazıları yada aynı satırda olması için*/
+        justify-content: space-between;/*menüyü en sağ köşeye götürür*/
+        align-items: center;
+
+}
+
+nav ul{
+    list-style: none;/*Home yazısının yanındaki nokta gitti*/
+    display: flex;/*Home menüsündekileri yanyana getirir*/
+    column-gap: 20px;/*Home  menüsünün ara boşluklarını ayarlar*/
+}
+
+nav ul li a {/*Home menüsü yazısı için */
+    color: #fff;
+    text-decoration: none;
+    transition: ease 0.5s;/*hover kısmı mouse geldiğinde hızı ayarlar*/
+}
+
+nav ul li a:hover {/*Home menüsü mouse üzreirnde hareket sağlar */
+    color:#000;
+}
+
+.row {
+    display: flex;
+    align-items: center;/*bu ortdaki iki ayrı tablo arasındaki ayarı yapıyor yani row kısmındaki iki col etiketi için*/
+    column-gap: 10px;
+    height: 88%;
+}
+
+.col { /* html de ki row kısmı yani sayfayı ikiy ayırdığını düşün. iki sayfayı da ortalar*/
+    flex: 1;
+}
+
+h1 {  /*h1 yazının rengini ve boyutunu büyüttü*/
+    color: #fff;
+    font-size: 100px;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.cards {/*ortadaki 4 tablonun ortalanması ve esşitlenemsi için*/
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid red;
+    position: relative;
+    margin: 10px 15px;/*tablolar arası uzaklık*/
+    transition: ease 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    border-color: #fff;/*hareket ederken tablo kenarı beyazlar*/
+}
+/*Y ekseni yukarıdan aşağıya demektir. eğer -10 yaparsan yukarıya normal 10 yaparsan aşağıya hareket eder
+X ekseni ise sağdan sola */
+
+.card .card-head {
+    background-color: rgba(0,0,0,0.7); /*kartların içindeki siyah*/
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.card .card-bottom { /*kart içindeki butonu alt kısma geçirmek için bottom kullan ama sadce tabloun en altında olması için .card kısmına posiiton relative de*/
+    position: absolute;
+    bottom: 26px;
+}
+
+.card.card-1 {
+    background-image: url(./images/pic-1.png);
+}
+
+.card.card-2 {
+    background-image: url(./images/pic-2.png);
+}
+
+.card.card-3 {
+    background-image: url(./images/pic-3.png);
+}
+
+.card.card-4 {
+    background-image: url(./images/pic-4.png);
+}
+
+.credit {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.credit span {
+    color: red;
+}
+
