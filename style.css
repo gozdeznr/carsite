@@ -148,12 +148,11 @@ X ekseni ise sağdan sola */
 
 .credit {
     font-size: 1rem;
-    color: #fff;
+    color: #988b8b;
     font-weight: 300;
-    padding-top: 1.5rem;
 }
 
 .credit span {
-    color: red;
+    color: blueviolet;
 }
 
